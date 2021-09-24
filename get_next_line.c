@@ -20,7 +20,7 @@ static char	*assign_chars(char *aux)
 	i = 0;
 	while (aux[i] != '\n' && aux[i] != '\0')
 		i++;
-	str = malloc(sizeof(char) * i + 1);
+	str = malloc(sizeof(char *) * i + 1);
 	ft_memcpy(str, aux, i + 1);
 	str[i + 1] = '\0';
 	return (str);
